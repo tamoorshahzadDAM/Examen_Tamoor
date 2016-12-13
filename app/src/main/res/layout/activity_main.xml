@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:text="Dades de alumne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewAlumne"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Nom"
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewNom"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextNom"
+            android:hint="Nombre" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="26dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_weight="0.15">
+        <RadioButton
+            android:text="Suma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonSuma"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/holo_blue_light" />
+
+        <RadioButton
+            android:text="Restes"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonResta"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="normal|bold"
+            android:background="@android:color/holo_blue_light" />
+
+        <RadioButton
+            android:text="Multiplicacio"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/holo_blue_light"
+            android:id="@+id/radioButtonMultiplicacio"
+            android:layout_width="200dp" />
+
+        <RadioButton
+            android:text="Divisio"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/holo_blue_light"
+            android:id="@+id/radioButtonDivisio"
+            android:layout_width="200dp" />
+
+        <RadioButton
+            android:text="General"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/holo_blue_light"
+            android:id="@+id/radioButtonGeneral"
+            android:layout_width="200dp" />
+    </RadioGroup>
+
+    <TextView
+        android:text="Escullir Nombre de preguntas:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPreguntas"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPreguntas"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_weight="0.12">
+        <RadioButton
+            android:text="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton5"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/holo_blue_light" />
+
+        <RadioButton
+            android:text="20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton20"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/holo_blue_light" />
+
+        <RadioButton
+            android:text="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButton10"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/holo_blue_light" />
+
+    </RadioGroup>
+
+    <Button
+        android:text="Next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_Next"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        android:elevation="0dp" />
+
+    <Button
+        android:text="Salir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_salir"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_dark" />
+
+
+</LinearLayout>

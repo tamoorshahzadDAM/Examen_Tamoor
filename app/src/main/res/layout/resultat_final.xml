@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:text="Finalitzar el Test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPreguntasInicio"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_weight="0.10" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Resultat Final"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewResultat"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="normal|bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextEncerts"
+            android:hint="Resultat Final" />
+
+    </LinearLayout>
+
+
+
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_weight="0.26" />
+
+
+
+
+
+    <Button
+        android:text="Salir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_salir"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_dark" />
+
+
+</LinearLayout>

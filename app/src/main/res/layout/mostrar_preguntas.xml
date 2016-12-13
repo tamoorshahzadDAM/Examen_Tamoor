@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:text="Mostrar Preguntas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPreguntasInicio"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Nombre Encerts"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewEncert"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="normal|bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextEncerts"
+            android:hint="Encerts" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Nombre Errades"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewErrades"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="normal|bold"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextEnrrades"
+            android:hint="Errades" />
+
+    </LinearLayout>
+
+    <TextView
+        android:text="Preguntas "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewPreguntas"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="normal|bold"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_weight="0.15">
+        <RadioButton
+            android:text="Opcion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonOpcion1"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/holo_blue_light" />
+
+        <RadioButton
+            android:text="Opcion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonOpcion2"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/holo_blue_light" />
+
+        <RadioButton
+            android:text="Opcion3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonOpcion3"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/holo_blue_light" />
+
+        <RadioButton
+            android:text="Opcion4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonOpcion4"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:background="@android:color/holo_blue_light" />
+
+
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="26dp" />
+
+
+
+    <Button
+        android:text="Confirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_Confirmar"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        android:elevation="0dp" />
+
+    <Button
+        android:text="Salir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_salir"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_dark" />
+
+
+</LinearLayout>
